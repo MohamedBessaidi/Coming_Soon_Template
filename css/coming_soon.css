@@ -70,26 +70,6 @@ html, body {width: auto!important; overflow-x: hidden!important}
     font-weight: 400;
     margin: 10px 0;
 }
-.landing .display-middle h1::after {
-    content: "soon";
-    text-transform: uppercase;
-    font-size: 64px;
-    font-weight: 400;
-    margin: 10px 0;
-    padding-left: 16px;
-}
-@media (min-height: 650px) {
-    .landing .display-middle h1::after {
-        position: absolute;
-        top: 60%;
-        left: 10%;
-    }
-    .landing .display-middle .display-middle-com {
-        position: absolute;
-        top: 150%;
-        left: 30%;
-    }
-}
 .landing .display-middle hr {
     margin: auto;
     width: 40%;
