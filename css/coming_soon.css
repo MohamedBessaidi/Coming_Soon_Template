@@ -1,0 +1,92 @@
+/* start varaibles */
+:root {
+    --main-color: #fff;
+}
+/* end varaibles */
+/* start global rules */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--main-color);
+}
+html, body {width: auto!important; overflow-x: hidden!important} 
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* end global rules */
+/* start landing */
+body {
+    background-image: url(../images/landing.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: opac 0.8s;
+}
+.landing .display-top {
+    padding: 12px 24px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.landing .display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    -webkit-transform: translate( -50%, -50%);
+    -moz-transform: translate( -50%, -50%);
+    -ms-transform: translate( -50%, -50%);
+    -o-transform: translate( -50%, -50%);
+    
+}
+.landing .display-middle h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.landing .display-middle hr {
+    margin: auto;
+    width: 40%;
+    border: 0;
+    border-top: 1px solid #9e9e9e;
+}
+.landing .display-middle p {
+    text-align: center;
+    font-size: 18px;
+}
+.landing .display-bottom {
+    padding: 12px 24px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.landing .display-bottom a {
+    color: var(--main-color);
+}
+/* end landing */
